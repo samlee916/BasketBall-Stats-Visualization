@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis</h1>
+
+  <p>
+    <strong>Sam Lee</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    <br/>
+    This data is about all the stats of each player from 2014-2015 NBA season. This dataset was produced
+    by Kaggle, a famous website full of a bunch of data that anyone can use for FREE!!! I am interested in
+    this dataset because I wanted to do something sports related. Basketball is my second favorite sports and I chose
+    it for this assignment because the dataset was great. I would of chosen tennis but the datasets provided
+    by Kaggle sucked.
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+      <a href="https://www.kaggle.com/drgilermo/nba-players-stats-20142015">Click here for the website.</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Who had the most points in that season?</li>
+    <li>Which team had the youngest players?</li>
+    <li>Why did certain players get an NBA award?</li>
+    <li>Who is the best basketball player of that season?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  <div class="entry">
+    <img src="Image1.png" />
+    <p class="caption">
+    For the first graph, I wanted to know who should of won the NBA Kia MVP Award. Stephen Curry won the 
+    award unanimously, which I felt was not fair. I beleive James Harden should of won that award fair and square
+    because out of three, himself, Stephen Curry, and Lebron James, he had the best stats: most points, assists, blocks, 
+    rebounds, and steals, which tallied up to 2,217 points, 459 rebounds, 154 steals, 60 blocks, and 565 assists.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image2.png" />
+    <p class="caption">
+    For the second graph, I wanted to know which NBA player had the best defensive abilitites out there on the court.
+    Based on the data shown above we can say that height has an effect on defensive abilities. As you the data portrays,
+    DeAndre Jordan has the best defensive abilities during the 2014-2015 season. I expected Anthony Davis to be the online
+    with the best defensive skills due to him being the tallest of the four players that I picked out randomly based on
+    them being nominated for defensive player of the year. DeAndre Jordan recorded  1,226 rebounds and 183 blocks that whole
+    season. This also shows that height doesn't correlate well with defensive abilities.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image3.png" />
+    <p class="caption">
+    For the third graph, I chose to display field goal percentage (FG%). Field goal percentage is used to measure how well a player or team shoots the ball during a game. Based on the data shown, the best
+    team with the highest field goal percentage is the Golden State Warrioirs. This team has two of the greatest shooters of all time, Stephen 
+    Curry and Klay Thompson. It is said that they are nickname the Splash Beothers because of of how well they can shoot the ball, 
+    especially three pointers, their specialty. I am not surprised that the San Antonio Spurs came in second of that category because they
+    have a great coach and a consistent starting line up that can shoot the ball very clean and easy like Danny Green, Kawhi Leonard, and Manu Ginobili.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image4.png" />
+    <p class="caption">
+    For the fourth graph, I chose the display the average age of a team because I wanted to know which team have young and old players.
+    This will especially help teams choose players for trades in the offseason because every team wants a young and healthy player
+    that can contribute to the team for a long span of his career as well as veteran players to teach the young players the skills and
+    knowledge that will help improve their game to the next level. The youngest team is the Utah Jazz with an average team age of 24.375 and the 
+    oldest team is the Washington Wizards with an avertage team ago of 29.813. Also, each box is clor coded according to their average
+    team age, light is young and dark is old. 
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image5.png" />
+    <p class="caption">
+    For the fifth graph, I chose to display the average sizes, mainly height for each position in the NBA, since I wanted to compare to what the normal 
+    sizes are from this <a href="https://en.wikipedia.org/wiki/Basketball_positions">website</a>. Height is the determining factor for each position. 
+    I included weight and BMI because that also sometimes correlate with position. Based on the 2014-2015 NBA data, the average height in inches for a 
+    point guard is 185.4 centimeters (1.854 meters) and that is between the normal height of a point guard, 1.77 meters to 1.94 meters. The average height 
+    for a shooting guard is 192.6 centimeters (1.926 meters), which is the normal height of a shooting guard, 1.85 meters to 2.01 meters. The average height 
+    of a small forward is 200 centimeters (2 meters), which is the normal height of a small forward, 1.92 meters to 2.04 meters. The average height of a center 
+    is 208 centimeters (2.08 meters), which is the normal height of a center, above 2.08 meters. The average height of a power forward is 203.5 centimeters (2.035 meters), 
+    which is the normal height 1.97 meters to 2.09 meters. These standard heights are important because height tends to accompany other important features for a basketball player, 
+    including arm reach and hand span, which helps each position out.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image6.png" />
+    <p class="caption">
+    For the sixth graph, I chose to display field goals attempted vs field goals made because I wanted to see how good the NBA teams were at
+    shooting beyond the paint or arc for that season. Based on the data above, the sum and the average is below 50%, which explains 
+    the field goal percentage, which is about 46% and that percentage makes sense you calcualte it manually. I can say that all the NBA teams
+    need to approve their shooting because they are not even above 50%. Hopefully, during the offseason, all the team will practiving shooting
+    beyond the paint and arc to boost those numbers up. 
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image7.png" />
+    <p class="caption">
+    For the seventh graph, I chose to display details about Lebron James's future NBA stats. I feel like he will be #1 in the all time scoring
+    list because it still has a few years left on him. He is averaging 1,743 points person and he is already past his prime years,
+    which were the ages 22 to 30. He is doing the impossible at his age where most NBA players will not be able to do. If he keeps on going like
+    this every year, he will beat everyone in the all time scoring list. Also, if is minutes are consistent and never go down, he will have more time to take shots and hopefully they go 
+    in for him. He will also probably all time in assists as well, since his passing skills
+    are off the charts.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image8.png" />
+    <p class="caption">
+    For the eighth graph, I chose to display who was the better number one seed out of the western and eastern conference. Based on the data,
+    you can tell who won in the category and it was a land slide. THe Golden State Warriors are the clear victor out of the two. 
+    They had 26% more in assists, 22% more in blocks, 14% more in field goals made, 12% more in points, and 13% in rebounds as well as 16% more in
+    turnovers. It seems that the Golden State Warriors won by a landslide. They beat the Atlanta Hawks in all the categories listed in the graph.   
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image9.png" />
+    <p class="caption">
+    For the ninth graph I wanted to know the prime years of a basketball player. 
+    Based on the graph and data, the prime years of an NBA player is between 26 years old to 
+    32 years old resulting in an average of 701.1 points, 62.90 games played, 1,625.6 minutes 
+    played, 53.14 steals, and 282.7 rebounds. With that being said, an NBA player has six years to 
+    dominate. Based on this <a href=" https://www.sportscasting.com/the-exact-age-that-nba-players-are-in-their-prime/">website</a>, 
+    the prime age of an NBA player is 27 years old. This NBA data doesn’t reflect mines that well but that is fine because it is based on one season. 
+    They might start earlier and dominate in the later years. One example is Lebron James who has been very consistent in basketball domination based 
+    on NBA stats and ESPN news. There is one outlier in the data, which is the age 39, which has amazing stats. This could be because as you get 
+    older you are more experienced and can obtain more points and rack up better stats than before. 
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Image10.png" />
+    <p class="caption">
+    For the last and final graph, I wanted to know how good NBA teams are at shooting three 
+    pointers. Based on the data, the 2014-2015 NBA season team really suck at making threes. 
+    I guess most players want to shoot in the three-point arc for easy points like lay up and 
+    a short pull up inside the paint. The percentage of three points made over attempts is 25%, 
+    which bad. If NBA teams want to improve their scoring percentage, they should draft better 
+    shooters and pick up good shooters during an offseason trade. This data also tells us that 
+    shooting beyond the arc is not normal and NBA players are still playing old school basketball. 
+    </p>
+  </div>
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+    Overall, this project was interesting and challenging for me and a great learning experience. It was very interesting because I was 
+    using new technolgies like Tableau to display visualizations of my data set that I chose. One of the most challenging things in this 
+    assignment was that I had a hard time finding great questions for my visualizations. I didn't want to choose simple that have no analysis
+    when looked at. I had to watch tutorials on Tableau and I eventually got the hang of it. I couldn't do some graphs becausemy data set
+    didn't have the right numerical and categorical data. For example, I could use a map for one of my visualization because my data set had
+    no longitude and latitude. Throughout all these visualization I have found my answers to my questions. 
+    The Golden State Warriors had the most points combined for that season. The Utah Jazz was the youngest team with the youngest players. 
+    Stephen Curry was the best basketball player of that season. Certain players got an NBA Award because of their stats that they racked up throughout the season.
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
